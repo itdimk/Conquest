@@ -1,0 +1,108 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Prata&family=Roboto:wght@300;400;500;700&display=swap"
+          rel="stylesheet">
+    <title>Conquest</title>
+</head>
+<body>
+<div class="container">
+    <header class="header flow space-between">
+        <div class="logo flow" style="--flow-gap: 0.2rem">
+            <img class="logo__image" src="icons/logo.svg" alt="C">
+            <span class="logo__text">Conquest</span>
+        </div>
+        <nav class="nav">
+            <ul data-clean class="nav__items flow" style="--flow-gap: 4rem">
+                <li><a class="nav__link" href="#">Каталог</a></li>
+                <li><a class="nav__link" href="#">Акции</a></li>
+                <li><a class="nav__link" href="#">Доставка</a></li>
+                <li><a class="nav__link" href="#">Контакты</a></li>
+            </ul>
+        </nav>
+        <nav class="right-nav">
+            <ul data-clean class="right-nav__items flow">
+                <li>
+                    <a class="right-nav__link" href="#">
+                        <img src="icons/search.svg" alt="Search" class="right-nav__icon"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="right-nav__link show-count" href="#">
+                        <img src="icons/like.svg" alt="Favourites" class="right-nav__icon"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="right-nav__link" href="#">
+                        <img src="icons/cart.svg" alt="Cart" class="right-nav__icon"/>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero flow space-between">
+            <div class="hero__text">
+                <h1 class="hero__title">Весна/Лето 2019</h1>
+                <h2 class="hero__subtitle">Коллекция </h2>
+                <p class="hero__description">
+                    Швейцарские часы в наличии в Москве <br/>
+                    и с доставкой по всему миру
+                </p>
+                <a href="#" class="hero__button button dark">Смотреть каталог</a>
+            </div>
+            <img class="hero__image" src="watch/main.png" alt="Rado Watch"/>
+            <span class="hero__price flow line right">
+                <span class="hero__specs-number">22 000</span>
+                <img class="hero__price-currency" src="icons/ruble.svg" alt="Рублей"/>
+            </span>
+
+            <span class="hero__diameter hero__specs-number line left">28 мм диаметр</span>
+        </section>
+        <section class="popular flow column">
+            <div class="popular__header flow">
+                <h2 class="popular__title">Популярные модели</h2>
+                <a href="#" class="popular__see-all line under">Смотреть все</a>
+            </div>
+            <ul data-clean class="popular__goods flow">
+                <li class="watch-card flow column" style="--flow-gap: 0">
+                    <h4 class="watch-card__title">Rado</h4>
+                    <span class="watch-card__price-block">
+                        <span class="watch-card__price">65300</span>
+                        <img class="watch-card__currency" src="icons/ruble.svg"/>
+                    </span>
+                    <img class="watch-card__image" src="watch/watch_1.png"/>
+                    <a href="#" class="watch-card__more line left">Подробнее</a>
+                </li>
+
+                <li class="watch-card flow column" style="--flow-gap: 0">
+                    <h4 class="watch-card__title">BVLGARI</h4>
+                    <span class="watch-card__price-block">
+                        <span class="watch-card__price">81700</span>
+                        <img class="watch-card__currency" src="icons/ruble.svg"/>
+                    </span>
+                    <img class="watch-card__image" src="watch/watch_3.png"/>
+                    <a href="#" class="watch-card__more line left">Подробнее</a>
+                </li>
+
+                <li class="watch-card flow column" style="--flow-gap: 0">
+                    <h4 class="watch-card__title">BVLGARI</h4>
+                    <span class="watch-card__price-block">
+                        <span class="watch-card__price">72700</span>
+                        <img class="watch-card__currency" src="icons/ruble.svg"/>
+                    </span>
+                    <img class="watch-card__image" src="watch/watch_4.png"/>
+                    <a href="#" class="watch-card__more line left">Подробнее</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+</div>
+</body>
+</html>
