@@ -1,7 +1,8 @@
-@import "common/variables"
-@import "common/utility"
-@import "common/reset.css"
-@import "components"
+@import "variables"
+@import "reset.css"
+@import "components/_components.sass"
+@import "sections/_sections.sass"
+@import "sections/footer"
 
 *
   font-family: inherit
@@ -76,7 +77,8 @@ ul[data-clean]
   bottom: 18%
 
 .popular
-  margin-top: 3.125rem
+  padding-top: 3.125rem
+  padding-bottom: 7.75rem
 
 .popular__header
   width: 100%
@@ -97,47 +99,52 @@ ul[data-clean]
 .popular__goods
   margin-top: 3.125rem
 
-.watch-card
-  justify-content: start
+.slideshow___image
+  max-width: 32.5rem
+
+.slideshow
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-template-rows: 1fr auto
+  padding-block: 3.33rem 1.25rem
+  padding-inline: 11rem
+  column-gap: 4.3rem
   position: relative
-
-.watch-card__title
-  font-family: $ff-playfair
-  font-size: $fs-300
-  font-weight: $fw-bold
-  line-height: 1.7
-  letter-spacing: 0.03em
-  color: $clr-neutral-800-opacity
-  text-transform: uppercase
-  margin-right: auto
-  margin-left: 3rem
-
-.watch-card__price-block
-  margin-right: auto
-  margin-left: 3rem
-
-.watch-card__price
-  font-family: $ff-prata
-  font-size: $fs-200
-  color: $clr-neutral-800-opacity
-  text-transform: uppercase
-  margin-top: 0.625rem
-
-.watch-card__currency
-  display: inline-block
-  height: 10px
-
-.watch-card__more
-  margin-top: 1.25rem
-
-.watch-card::before
-  content: ""
-  position: absolute
-  top: 12%
-  z-index: 10
-  width: 313px
-  height: 313px
+  background-image: url("~/assets/img/decor/bg-rect.svg")
+  background-size: cover
   background-repeat: no-repeat
+  overflow: hidden
 
-  background-image: url("~/assets/img/decor/watch-card-circle.svg")
-  
+.slideshow::after
+  content: ""
+  background-image: url("~/assets/img/decor/circles.svg")
+  background-repeat: no-repeat
+  position: absolute
+  right: -32vw
+  top: -38%
+  width: 744px
+  height: 900px
+
+.slideshow__info
+  align-items: start
+  max-width: 45ch
+
+.slideshow__title
+  font: $ff-playfair $fs-800
+  line-height: 1.33
+
+.slideshow__description
+  font-family: $ff-roboto
+  margin-top: 2.375rem
+  line-height: 1.5
+
+.slideshow__controls
+  margin-top: 1.25rem
+  margin-left: auto
+  margin-right: 5rem
+
+.slideshow__button
+  margin-top: 2.8rem
+
+.slideshow__page-number
+  font: $fs-200 $ff-prata

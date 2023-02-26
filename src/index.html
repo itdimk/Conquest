@@ -46,7 +46,9 @@
             </ul>
         </nav>
     </header>
-    <main>
+</div>
+<main>
+    <div class="container">
         <section class="hero flow space-between">
             <div class="hero__text">
                 <h1 class="hero__title">Весна/Лето 2019</h1>
@@ -70,7 +72,7 @@
                 <h2 class="popular__title">Популярные модели</h2>
                 <a href="#" class="popular__see-all line under">Смотреть все</a>
             </div>
-            <ul data-clean class="popular__goods flow">
+            <ul data-clean class="popular__goods flow space-between">
                 <li class="watch-card flow column" style="--flow-gap: 0">
                     <h4 class="watch-card__title">Rado</h4>
                     <span class="watch-card__price-block">
@@ -102,7 +104,100 @@
                 </li>
             </ul>
         </section>
-    </main>
-</div>
+    </div>
+    <section class="slideshow">
+        <img src="watch/photo_banner.png" alt="Watch" class="slideshow__image">
+        <div class="slideshow__info flow column" style="--flow-gap: 0">
+            <h2 class="slideshow__title">Подлинное качество</h2>
+            <p class="slideshow__description">
+                Все часы производятся в Швейцарии и имеют сертификаты качества.
+                Настоящие швейцарские часы — это предмет гордости и престижа.
+            </p>
+            <a class="button cream slideshow__button">Смотреть каталог</a>
+        </div>
+        <div class="slideshow__controls flow">
+            <img class="slideshow__arrow" src="icons/arrow_left.svg" alt="Previous">
+            <span class="slideshow__page-number">01</span>
+            <img class="slideshow__arrow" src="icons/arrow_right.svg" alt="Next">
+        </div>
+    </section>
+    <div class="container">
+        <section class="stay-tuned">
+            <div class="stay-tuned__text flow column">
+                <h2 class="stay-tuned__title">Следите за нашими новостями</h2>
+                <p class="stay-tuned__description">Подписывайтесь на @conquest_watch в соцсетях и узнавайте о новинках и
+                    акциях первыми.</p>
+
+                <ul data-clean class="stay-tuned__social-links flow">
+                    <li><a href="#">
+                        <img src="social/instagram_icon.svg" alt="Instagram">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="social/facebook_icon.svg" alt="Facebook">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="social/twitter_icon.svg" alt="Twitter">
+                    </a></li>
+                </ul>
+            </div>
+            <img class="stay-tuned__photo-1" src="watch/photo_1.png" alt="Watch">
+            <img class="stay-tuned__photo-2" src="watch/photo_2.png" alt="Watch">
+            <img class="stay-tuned__photo-3" src="watch/photo_3.png" alt="Watch">
+        </section>
+    </div>
+</main>
+
+<footer class="footer flow align-top space-evenly">
+    <div class="footer__column">
+        <div class="logo flow" style="--flow-gap: 0.2rem">
+            <img class="logo__image" src="icons/logo-light.svg" alt="C">
+            <span class="logo__text dark">Conquest</span>
+        </div>
+        <p class="footer__phone">
+            8 (499) 450-47-97
+        </p>
+        <a class="footer__email" href="mailto:info@conquest.watch.ru">
+            info@conquest.watch.ru
+        </a>
+    </div>
+
+    <div class="footer__column">
+        <h4 class="footer__title">
+            О компании
+        </h4>
+        <ul data-clean>
+            <li><a class="footer__link" href="#">Наши магазины</a></li>
+            <li><a class="footer__link" href="#">Вакансии</a></li>
+            <li><a class="footer__link" href="#">Сертификаты</a></li>
+            <li><a class="footer__link" href="#">Отзывы</a></li>
+        </ul>
+    </div>
+
+
+    <div class="footer__column">
+        <h4 class="footer__title">
+            Покупателям
+        </h4>
+        <ul data-clean>
+            <li><a class="footer__link" href="#">Каталог товаров</a></li>
+            <li><a class="footer__link" href="#">Как заказать?</a></li>
+            <li><a class="footer__link" href="#">FAQ</a></li>
+            <li><a class="footer__link" href="#">Корпоративным клиентам</a></li>
+        </ul>
+    </div>
+
+    <div class="footer__column">
+        <h4 class="footer__title">
+            Оплата и доставка
+        </h4>
+        <ul data-clean>
+            <li><a class="footer__link" href="#">Способы оплаты</a></li>
+            <li><a class="footer__link" href="#">Время доставки<a></li>
+            <li><a class="footer__link" href="#">Гарантии и ремонт</a></li>
+            <li><a class="footer__link" href="#">Возврат и компенсация</a></li>
+        </ul>
+    </div>
+</footer>
+
 </body>
 </html>

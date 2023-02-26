@@ -1,0 +1,49 @@
+﻿@import "../variables";
+
+.stay-tuned {
+  display: grid;
+  margin-top: 5rem;
+  grid-template-columns: min(2.5fr, 36rem) 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.625rem;
+  grid-template-areas: "text photo-1 photo-3"
+                       "text photo-2 photo-3"
+}
+
+.stay-tuned__photo-1 {
+  grid-area: photo-1;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stay-tuned__photo-2 {
+  grid-area: photo-2;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stay-tuned__photo-3 {
+  grid-area: photo-3;
+  object-fit: cover;
+  height: 100%;
+}
+
+.stay-tuned__text {
+  grid-area: text;
+  padding-bottom: 3.75rem;
+  padding-top: 8.5rem;
+  align-items: start;
+  height: 100%;
+}
+
+.stay-tuned__title {
+ font: $fs-800 $ff-playfair;
+}
+
+.stay-tuned__description {
+  line-height: 1.7;
+}
+
+.stay-tuned__social-links {
+  margin-top: auto;
+}

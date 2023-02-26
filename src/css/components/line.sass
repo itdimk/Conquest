@@ -1,0 +1,25 @@
+﻿@import "../variables"
+
+.line
+  position: relative
+
+  &.right::after
+    right: var(- --spacing, -75px)
+
+  &.left::after
+    left: var(- --spacing, -75px)
+
+  &::after
+    content: ""
+    position: absolute
+    height: 1px
+    width: 50px
+    background-color: $clr-primary-500
+    z-index: 1
+    top: 50%
+
+  &.under::after
+    width: 98%
+    top: auto
+    left: 1%
+    bottom: var(- --spacing, -11px)
